@@ -24,7 +24,7 @@
 - На Colab додайте через Secrets (🔑 icon)
 - Потрібен активний billing на акаунті
 
-**2. Telegram Bot Token** (`TELEGRAM_TOKEN`)
+**2. Telegram Bot Token** (`TELEGRAM_BOT_TOKEN`) - опційно
 - Створіть бота через **@BotFather** у Telegram
 - Отримайте токен, додайте до Secrets
 - Опційно — бот запускається окремою коміркою
@@ -55,7 +55,7 @@ https://colab.research.google.com/github/NatalyUA/RAG-workshop_Day2/blob/main/ra
 2. **Збережіть копію**: `File → Save a copy in Drive`.
 3. **Додайте secrets** (ліва панель → 🔑 key icon):
    - `OPENAI_API_KEY` — ваш OpenAI API ключ
-   - `TELEGRAM_TOKEN` — токен Telegram-бота (опційно)
+   - `TELEGRAM_BOT_TOKEN` — токен Telegram-бота (опційно)
 4. **Запустіть комірки** послідовно (Shift+Enter):
    - Комірка **Setup** встановить бібліотеки
    - Комірка **Індексація** завантажить `data/` і створить вектор-індекс
@@ -80,7 +80,7 @@ https://colab.research.google.com/github/NatalyUA/RAG-workshop_Day2/blob/main/ra
 4. **Додайте credentials** у `.env` файл у корені проєкту:
    ```
    OPENAI_API_KEY=sk-...
-   TELEGRAM_TOKEN=123456:ABC...  # (опційно)
+   TELEGRAM_BOT_TOKEN=123456:ABC...  # (опційно)
    ```
 5. **Запустіть ноутбук**:
    ```bash
@@ -102,7 +102,7 @@ https://colab.research.google.com/github/NatalyUA/RAG-workshop_Day2/blob/main/ra
   - На локалі: `pip install -r requirements.txt`
 
 - **Telegram-бот не запускається**
-  - Переконайтеся, що `TELEGRAM_TOKEN` додано до Secrets (Colab) або `.env` (локально)
+  - Переконайтеся, що `TELEGRAM_BOT_TOKEN` додано до Secrets (Colab) або `.env` (локально)
   - Токен отримайте від **@BotFather** у Telegram
 
 - **GoogleDrive не монтується на Colab**
