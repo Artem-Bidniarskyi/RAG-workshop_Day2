@@ -1,64 +1,114 @@
-# RAG Workshop (Day 1)
+# RAG Workshop — День 2: Асистент ріелтора (Realistic End-to-End)
 
-Практичний вступ до Retrieval-Augmented Generation(пошук із підсиленням генерації, RAG):
-- embeddings(ембеддінги)
-- chunking(чанкінг)
-- retrieval(пошук) із vector store(векторного сховища, ChromaDB)
-- augmentation(аугментація)
-- generation(генерація)
+Реалістичний приклад RAG-системи на синтетичних, але структурованих даних реальної агентури нерухомості.
+
+**Що розбираємо:**
+- **Реальні формати даних**: CSV (каталог квартир, клієнти), Markdown (політики, чеклисти), PDF (договори)
+- **ChromaDB у режимі персистентності** — індекс зберігається між сеансами
+- **Метадані для retrieval**: `source` для фільтрації й цитування
+- **Стабільна індексація**: `upsert` зі стійкими ID без дублікатів при повторному запуску
+- **Маршрутизація контексту**: LLM-роутер `where` обмежує пошук до потрібних файлів
+- **Історія діалогу**: чат у межах сесії з контекстом попередніх репік
+- **Промпт-інжиніринг**: цитування джерел, галюцинаціональна стійкість, структурована відповідь
+- **Telegram-бот**: інтерфейс для RAG-асистента
+- **Evaluation**: золотий набір і метрики якості (coverage джерел, судження LLM)
 
 ---
 
-## Необхідні credentials(облікові дані)
+## Необхідні credentials
 
-Для цього воркшопу потрібні такі credentials(облікові дані):
+Для цього воркшопу потрібні:
 
 **1. OpenAI API key** (`OPENAI_API_KEY`)
 - Отримати тут: [https://platform.openai.com/](https://platform.openai.com/)
-- Sign up → API keys → Create new secret key
-- Важливо: одного ключа недостатньо — на акаунті має бути активний billing(білінг) / кредит(баланс), щоб були доступні токени для запуску моделей.
-- Для воркшопу використовуємо найдешевші моделі (цього достатньо), але токени все одно мають оплачуватися з доступного кредиту.
+- На Colab додайте через Secrets (🔑 icon)
+- Потрібен активний billing на акаунті
 
-> Не хардкодьте secrets(секрети) в комірках notebook(ноутбука).
+**2. Telegram Bot Token** (`TELEGRAM_TOKEN`)
+- Створіть бота через **@BotFather** у Telegram
+- Отримайте токен, додайте до Secrets
+- Опційно — бот запускається окремою коміркою
 
 ---
 
-## Відкрити в Colab
+## Відкрити у Google Colab
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NatalyUA/RAG-workshop/blob/main/rag_workshop_00_intro_v2.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NatalyUA/RAG-workshop_Day2/blob/main/rag_workshop_02_realtor_assistant.ipynb)
 
 Пряме посилання:
-https://colab.research.google.com/github/NatalyUA/RAG-workshop/blob/main/rag_workshop_00_intro_v2.ipynb
+https://colab.research.google.com/github/NatalyUA/RAG-workshop_Day2/blob/main/rag_workshop_02_realtor_assistant.ipynb
 
 ---
 
-## Вміст (Day 1)
+## Вміст (День 2)
 
-- `rag_workshop_00_intro_v2.ipynb`
-- `RAG_intro.png`
-- `RAG_mindmap.png`
-- `RAG_end-to-end_pipeline.png`
-
----
-
-## Швидкий старт (для учасників)
-
-1. Відкрийте notebook(ноутбук) у Colab через бейдж вище.
-2. Створіть власну editable copy(редаговану копію): `File → Save a copy in Drive`.
-   - Важливо: відкриття посилання **не** створює персональну копію автоматично.
-   - Спільне GitHub-посилання відкриває source version(вихідну версію) notebook(ноутбука) у Colab.
-3. Додайте credentials(облікові дані) у **Colab Secrets** (ліва панель → 🔑 key icon):
-   - `OPENAI_API_KEY` — ваш OpenAI ключ
-   - Альтернатива: задати як тимчасову environment variable(змінну середовища) в комірці (не рекомендовано для shared notebooks(спільних ноутбуків)).
-4. Запускайте комірки зверху вниз.
-5. Якщо встановлення пакетів просить runtime restart(перезапуск середовища) — перезапустіть і запустіть усе знову.
+- `rag_workshop_02_realtor_assistant.ipynb` — основний ноутбук
+- `use_case_realtor_assistant.md` — контекст юзкейсу
+- `data/` — корпус документів для індексації (CSV, Markdown, PDF)
+- `README.md` — цей файл
 
 ---
 
-## Troubleshooting(усунення проблем)
+## Швидкий старт (для учасників у Colab)
+
+1. **Відкрийте** notebook у Colab через бейдж вище.
+2. **Збережіть копію**: `File → Save a copy in Drive`.
+3. **Додайте secrets** (ліва панель → 🔑 key icon):
+   - `OPENAI_API_KEY` — ваш OpenAI API ключ
+   - `TELEGRAM_TOKEN` — токен Telegram-бота (опційно)
+4. **Запустіть комірки** послідовно (Shift+Enter):
+   - Комірка **Setup** встановить бібліотеки
+   - Комірка **Індексація** завантажить `data/` і створить вектор-індекс
+   - Комірки **Retrieval** й **RAG** покажуть приклади пошуку й відповідей
+   - Комірка **Telegram Bot** (опційно) запустить бота
+5. **Для локального запуску**: див. розділ **Локальний запуск** нижче
+
+---
+
+## Локальний запуск
+
+1. **Клонуйте repo або завантажте файли** до папки на машині
+2. **Створіть virtual environment**:
+   ```bash
+   python -m venv .venv
+   source .venv/bin/activate  # На Windows: .venv\Scripts\activate
+   ```
+3. **Встановіть залежності**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. **Додайте credentials** у `.env` файл у корені проєкту:
+   ```
+   OPENAI_API_KEY=sk-...
+   TELEGRAM_TOKEN=123456:ABC...  # (опційно)
+   ```
+5. **Запустіть ноутбук**:
+   ```bash
+   jupyter notebook
+   # або
+   python -m jupyter lab
+   ```
+
+---
+
+## Troubleshooting
 
 - **`OPENAI_API_KEY is missing`**
-  - Додайте ключ у Colab Secrets або задайте його в комірці до створення клієнта `OpenAI()`.
+  - **На Colab**: Додайте до Secrets (🔑 icon, ліва панель)
+  - **Локально**: Перевірте `.env` файл або встановіть environment variable: `export OPENAI_API_KEY=sk-...`
+
+- **`ModuleNotFoundError: No module named 'chromadb'`**
+  - Запустіть комірку **Setup** (встановлення залежностей)
+  - На локалі: `pip install -r requirements.txt`
+
+- **Telegram-бот не запускається**
+  - Переконайтеся, що `TELEGRAM_TOKEN` додано до Secrets (Colab) або `.env` (локально)
+  - Токен отримайте від **@BotFather** у Telegram
+
+- **GoogleDrive не монтується на Colab**
+  - Дозвольте доступ, коли з'явиться запит
+  - Папка `RAG-workshop_Day2` повинна існувати на Drive
+  - Альтернатива: завантажте файли прямо на Colab через Upload
 
 
 
