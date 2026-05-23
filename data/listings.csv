@@ -1,6 +1,11 @@
-listing_id,type,asking_price_uah,monthly_rent_uah,area_m2,rooms,district,status,address,description,pets_allowed,hoa_uah_month,parking,school_note
-L-001,sale,5200000,,68,2,Старе Місто,active,"вул. Домініканська, 12, кв. 7","Двокімнатна з якісним ремонтом 2023; вид на внутрішній двір; тихо.",dogs_under_10kg_only,2100,underground_slot,"Школа №4 — 7 хв пішки."
-L-002,rent,,18500,54,2,Старе Місто,active,"пл. Ринок, 3, кв. 15","Довгострокова оренда; меблі та техніка; без короткострокового саборенду за домовленістю з ОСББ.",cats_ok,1200,courtyard,"Гімназія ім. Франка — 12 хв."
-L-003,rent,,14200,41,1,Старе Місто,active,"вул. Вірменська, 8, кв. 2","Студія з окремою кухнею; свіжий ремонт; паркомісця немає.",no_pets,900,no,"Дитсадок «Веселка» — 5 хв."
-L-004,sale,8950000,,92,3,Центр,active,"просп. Свободи, 44, кв. 21","Трикімнатна з двома санвузлами; поруч паркінг оренда у сусіднього ТЦ.",negotiate,2800,nearby_paid,"Спеціалізована школа №17."
-L-005,sale,4100000,,45,1,Підзамче,under_offer,"вул. Замкова, 1а, кв. 9","Однокімнатна з балконом; потребує косметики.",yes_small_only,0,street_only,"Школа №8 — автобус 15 хв."
+listing_id,client_company,position,stack,seniority,salary_usd,employment_type,location,remote_policy,status,deadline,notes
+J001,TechVentures,Backend Developer,"Python, FastAPI, PostgreSQL",Middle,2500–3200,full-time,Львів,hybrid,open,2026-06-15,Команда 8 осіб; продукт — B2B SaaS для логістики
+J002,DataSoft,Data Engineer,"Spark, Airflow, Snowflake, Python",Senior,3500–4500,full-time,remote,fully_remote,open,2026-06-30,Обов'язково: досвід з Snowflake від 2 років
+J003,MobilePro,Android Developer,"Kotlin, Jetpack Compose",Middle,2000–2800,full-time,Київ,hybrid,in_progress,2026-06-10,Тестове завдання: 3 дні; команда у Польщі та Україні
+J004,CloudSystems,DevOps Engineer,"AWS, Terraform, Kubernetes",Senior,4000–5000,full-time,remote,fully_remote,open,2026-07-01,Потрібен допуск до роботи з EU клієнтами; англійська Advanced
+J005,FinTechUA,Frontend Developer,"React, TypeScript",Middle,2200–2800,full-time,Київ,office,filled,2026-05-01,Закрита вакансія; кандидат C004 не підійшов — закрито іншим шляхом
+J006,StartupHub,Full Stack Developer,"Node.js, React, MongoDB",Senior,3200–4000,full-time,remote,fully_remote,open,2026-06-20,Стартап Series A; equity-пакет обговорюється окремо
+J007,MediaGroup,UI/UX Designer,"Figma, Prototyping",Middle+,2000–2600,full-time,Львів,hybrid,open,2026-06-25,Портфоліо обов'язкове; галузь — медіа та e-commerce
+J008,EduTech,Project Manager,"Scrum, Jira, Agile",Senior,2800–3500,full-time,remote,fully_remote,open,2026-07-10,PMP або PSM бажаний; продукт — EdTech платформа для шкіл
+J009,CyberShield,QA Engineer,"Cypress, Postman, API testing",Middle,1800–2400,full-time,Харків,hybrid,on_hold,2026-06-05,Вакансія призупинена через реорганізацію клієнта
+J010,AppFactory,iOS Developer,"Swift, SwiftUI",Senior,3500–4200,full-time,remote,fully_remote,open,2026-07-15,Потрібен досвід публікації у App Store від 3 застосунків
