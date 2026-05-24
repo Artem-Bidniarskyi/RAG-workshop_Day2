@@ -1,11 +1,11 @@
 listing_id,client_company,position,stack,seniority,salary_usd,employment_type,location,remote_policy,status,deadline,notes
-J001,TechVentures,Backend Developer,"Python, FastAPI, PostgreSQL",Middle,2500–3200,full-time,Львів,hybrid,open,2026-06-15,Команда 8 осіб; продукт — B2B SaaS для логістики
-J002,DataSoft,Data Engineer,"Spark, Airflow, Snowflake, Python",Senior,3500–4500,full-time,remote,fully_remote,open,2026-06-30,Обов'язково: досвід з Snowflake від 2 років
-J003,MobilePro,Android Developer,"Kotlin, Jetpack Compose",Middle,2000–2800,full-time,Київ,hybrid,in_progress,2026-06-10,Тестове завдання: 3 дні; команда у Польщі та Україні
-J004,CloudSystems,DevOps Engineer,"AWS, Terraform, Kubernetes",Senior,4000–5000,full-time,remote,fully_remote,open,2026-07-01,Потрібен допуск до роботи з EU клієнтами; англійська Advanced
-J005,FinTechUA,Frontend Developer,"React, TypeScript",Middle,2200–2800,full-time,Київ,office,filled,2026-05-01,Закрита вакансія; кандидат C004 не підійшов — закрито іншим шляхом
-J006,StartupHub,Full Stack Developer,"Node.js, React, MongoDB",Senior,3200–4000,full-time,remote,fully_remote,open,2026-06-20,Стартап Series A; equity-пакет обговорюється окремо
-J007,MediaGroup,UI/UX Designer,"Figma, Prototyping",Middle+,2000–2600,full-time,Львів,hybrid,open,2026-06-25,Портфоліо обов'язкове; галузь — медіа та e-commerce
-J008,EduTech,Project Manager,"Scrum, Jira, Agile",Senior,2800–3500,full-time,remote,fully_remote,open,2026-07-10,PMP або PSM бажаний; продукт — EdTech платформа для шкіл
-J009,CyberShield,QA Engineer,"Cypress, Postman, API testing",Middle,1800–2400,full-time,Харків,hybrid,on_hold,2026-06-05,Вакансія призупинена через реорганізацію клієнта
-J010,AppFactory,iOS Developer,"Swift, SwiftUI",Senior,3500–4200,full-time,remote,fully_remote,open,2026-07-15,Потрібен досвід публікації у App Store від 3 застосунків
+J001,TechVentures,Backend Developer,"Python, FastAPI, PostgreSQL",Middle,2500-3200,full-time,Lviv,hybrid,open,2026-06-15,Team of 8; product is B2B SaaS for logistics
+J002,DataSoft,Data Engineer,"Spark, Airflow, Snowflake, Python",Senior,3500-4500,full-time,remote,fully_remote,open,2026-06-30,Mandatory: 2+ years Snowflake experience
+J003,MobilePro,Android Developer,"Kotlin, Jetpack Compose",Middle,2000-2800,full-time,Kyiv,hybrid,in_progress,2026-06-10,3-day test task; team split between Poland and Ukraine
+J004,CloudSystems,DevOps Engineer,"AWS, Terraform, Kubernetes",Senior,4000-5000,full-time,remote,fully_remote,open,2026-07-01,EU client access required; Advanced English mandatory
+J005,FinTechUA,Frontend Developer,"React, TypeScript",Middle,2200-2800,full-time,Kyiv,office,filled,2026-05-01,Closed vacancy; filled through alternative channel
+J006,StartupHub,Full Stack Developer,"Node.js, React, MongoDB",Senior,3200-4000,full-time,remote,fully_remote,open,2026-06-20,Series A startup; equity package negotiable
+J007,MediaGroup,UI/UX Designer,"Figma, Prototyping",Middle+,2000-2600,full-time,Lviv,hybrid,open,2026-06-25,Portfolio required; industry focus: media and e-commerce
+J008,EduTech,Project Manager,"Scrum, Jira, Agile",Senior,2800-3500,full-time,remote,fully_remote,open,2026-07-10,PMP or PSM preferred; product is K-12 EdTech platform
+J009,CyberShield,QA Engineer,"Cypress, Postman, API testing",Middle,1800-2400,full-time,Kharkiv,hybrid,on_hold,2026-06-05,Vacancy paused due to client restructuring
+J010,AppFactory,iOS Developer,"Swift, SwiftUI",Senior,3500-4200,full-time,remote,fully_remote,open,2026-07-15,Must have 3+ published App Store applications

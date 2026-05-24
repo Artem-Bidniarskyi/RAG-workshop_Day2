@@ -1,45 +1,45 @@
-# Політика обробки персональних даних кандидатів (GDPR / Закон України 2297-VI)
+# Candidate Data Processing Policy (GDPR / Data Protection)
 
-Внутрішній регламент агентства «IT-Рекрутинг Альфа». Для навчального корпусу — синтетичний документ.
+Internal policy of Alpha IT Recruitment LLC. Synthetic document for workshop use.
 
-## 1. Які дані збираємо
+## 1. Data We Collect
 
-- ПІБ, контактні дані (email, телефон)
-- Резюме, портфоліо, результати тестових завдань
-- Нотатки рекрутера за підсумками інтерв'ю
-- Статус та історія взаємодії в CRM
+- Full name, contact details (email, phone)
+- Resume, portfolio, technical test results
+- Recruiter notes from interviews
+- Status and interaction history in CRM
 
-## 2. Мета обробки
+## 2. Purpose of Processing
 
-Дані збираються виключно для:
-- підбору відповідних вакансій та організації інтерв'ю;
-- передачі резюме клієнту-роботодавцю за попередньою згодою кандидата;
-- дотримання зобов'язань за договором з кандидатом.
+Data is collected exclusively for:
+- matching candidates to relevant vacancies and organizing interviews;
+- sharing resumes with client employers only with prior candidate consent;
+- fulfilling obligations under the candidate service agreement.
 
-## 3. Строки зберігання
+## 3. Retention Periods
 
-| Статус кандидата | Строк зберігання |
+| Candidate Status | Retention Period |
 |---|---|
-| active / in_process | Необмежено (до відкликання згоди) |
-| placed | **2 роки** з дати виходу на роботу |
-| blacklisted | **1 рік**, потім автоматичне видалення |
-| declined (сам відмовився) | **6 місяців** після останнього контакту |
+| active / in_process | Indefinite (until consent is withdrawn) |
+| placed | **2 years** from the candidate's start date |
+| blacklisted | **1 year**, then automatic deletion |
+| declined (candidate withdrew) | **6 months** after last contact |
 
-## 4. Передача даних третім особам
+## 4. Sharing Data with Third Parties
 
-Резюме кандидата передається клієнту-роботодавцю **лише після**:
-- усної або письмової згоди кандидата (фіксується в CRM із часовою міткою);
-- підписання клієнтом угоди про конфіденційність (NDA або розділ у договорі на послуги).
+A candidate's resume is shared with a client employer **only after**:
+- the candidate's verbal or written consent is recorded in the CRM with a timestamp;
+- the client has signed a non-disclosure agreement (NDA or confidentiality clause in the service contract).
 
-Передача даних за межі ЄС/України — лише з окремою згодою.
+Transfer of data outside the EU/Ukraine requires separate explicit consent.
 
-## 5. Права кандидата
+## 5. Candidate Rights
 
-Кандидат має право у будь-який момент:
-- запросити копію своїх даних (відповідь протягом **5 робочих днів**);
-- вимагати виправлення або видалення даних;
-- відкликати згоду — після цього дані видаляються впродовж **10 робочих днів**.
+A candidate may at any time:
+- request a copy of their data (response within **5 business days**);
+- request correction or deletion of their data;
+- withdraw consent — data will be deleted within **10 business days**.
 
-## 6. Відповідальна особа
+## 6. Data Protection Officer
 
-Data Protection Officer агентства — юрист Оксана Власенко (dpo@alpha-recruit.ua).
+Agency DPO: Legal Counsel Diana Vasylieva (dpo@alpha-recruit.com).

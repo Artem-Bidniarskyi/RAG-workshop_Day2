@@ -1,11 +1,11 @@
 candidate_id,full_name,email,phone,position,stack,experience_years,english_level,availability,status,notes
-C001,Олексій Марченко,o.marchenko@email.com,+380671112233,Backend Developer,"Python, FastAPI, PostgreSQL, Docker",5,Upper-Intermediate,2 weeks,active,Відкритий до релокації до Варшави
-C002,Ірина Коваль,i.koval@email.com,+380932223344,Frontend Developer,"React, TypeScript, Next.js, Tailwind",3,Intermediate,immediately,active,Тільки remote
-C003,Дмитро Шевченко,d.shevchenko@email.com,+380507778899,DevOps Engineer,"Kubernetes, Terraform, AWS, CI/CD",7,Advanced,1 month,in_process,Проходить фінальне інтерв'ю у клієнта TechVentures
-C004,Наталія Бондар,n.bondar@email.com,+380441234567,QA Engineer,"Selenium, Cypress, Postman, JIRA",4,Pre-Intermediate,immediately,placed,Вийшла на роботу 01.05.2026 — DataSoft
-C005,Антон Лисенко,a.lysenko@email.com,+380679876543,Full Stack Developer,"Node.js, React, MongoDB, GraphQL",6,Upper-Intermediate,3 weeks,active,Очікує оффер; контрофер від поточного роботодавця
-C006,Марія Іванова,m.ivanova@email.com,+380935556677,Data Engineer,"Python, Spark, Airflow, Snowflake",4,Intermediate,immediately,active,Відкрита до hybrid у Львові або Києві
-C007,Сергій Ткаченко,s.tkachenko@email.com,+380504443322,iOS Developer,"Swift, SwiftUI, Combine, XCode",8,Advanced,2 weeks,blacklisted,Не з'являвся на узгоджені інтерв'ю двічі поспіль
-C008,Олена Мороз,o.moroz@email.com,+380671239876,Project Manager,"Scrum, Jira, Confluence, Agile",10,Fluent,1 month,active,PMP-сертифікат; керувала командами до 15 осіб
-C009,Василь Гриценко,v.grytsenko@email.com,+380932345678,Android Developer,"Kotlin, Jetpack Compose, Room, Retrofit",5,Intermediate,immediately,in_process,Технічний тест пройдено у MobilePro
-C010,Тетяна Романенко,t.romanenko@email.com,+380507654321,UI/UX Designer,"Figma, Adobe XD, Prototyping, User Research",6,Upper-Intermediate,2 weeks,active,Портфоліо з фінтех та медтех проєктів
+C001,Alex Marchenko,a.marchenko@email.com,+1-415-111-2233,Backend Developer,"Python, FastAPI, PostgreSQL, Docker",5,Upper-Intermediate,2 weeks,active,Open to relocation to Warsaw
+C002,Iryna Koval,i.koval@email.com,+1-415-222-3344,Frontend Developer,"React, TypeScript, Next.js, Tailwind",3,Intermediate,immediately,active,Remote only
+C003,Dmytro Shevchenko,d.shevchenko@email.com,+1-415-777-8899,DevOps Engineer,"Kubernetes, Terraform, AWS, CI/CD",7,Advanced,1 month,in_process,Final interview in progress at TechVentures
+C004,Natalia Bondar,n.bondar@email.com,+1-415-123-4567,QA Engineer,"Selenium, Cypress, Postman, JIRA",4,Pre-Intermediate,immediately,placed,Started at DataSoft on May 1 2026
+C005,Anton Lysenko,a.lysenko@email.com,+1-415-987-6543,Full Stack Developer,"Node.js, React, MongoDB, GraphQL",6,Upper-Intermediate,3 weeks,active,Awaiting offer; counteroffer received from current employer
+C006,Maria Ivanova,m.ivanova@email.com,+1-415-555-6677,Data Engineer,"Python, Spark, Airflow, Snowflake",4,Intermediate,immediately,active,Open to hybrid in Lviv or Kyiv
+C007,Sergiy Tkachenko,s.tkachenko@email.com,+1-415-444-3322,iOS Developer,"Swift, SwiftUI, Combine, Xcode",8,Advanced,2 weeks,blacklisted,No-showed two scheduled interviews without notice
+C008,Olena Moroz,o.moroz@email.com,+1-415-123-9876,Project Manager,"Scrum, Jira, Confluence, Agile",10,Fluent,1 month,active,PMP certified; managed teams of up to 15 people
+C009,Vasyl Grytsenko,v.grytsenko@email.com,+1-415-234-5678,Android Developer,"Kotlin, Jetpack Compose, Room, Retrofit",5,Intermediate,immediately,in_process,Technical test passed at MobilePro
+C010,Tetyana Romanenko,t.romanenko@email.com,+1-415-765-4321,UI/UX Designer,"Figma, Adobe XD, Prototyping, User Research",6,Upper-Intermediate,2 weeks,active,Portfolio includes fintech and medtech projects

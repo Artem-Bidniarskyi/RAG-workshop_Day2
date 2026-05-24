@@ -1,42 +1,42 @@
-# Чекліст рекрутера — первинне інтерв'ю з кандидатом
+# Recruiter Checklist — Initial Candidate Interview
 
-Використовується для всіх технічних вакансій (Middle та вище). Навчальний корпус агентства «IT-Рекрутинг Альфа».
+Used for all technical roles at Middle level and above. Alpha IT Recruitment LLC internal document.
 
-## До дзвінка
+## Before the Call
 
-- [ ] Прочитати резюме та портфоліо повністю
-- [ ] Звірити стек кандидата з вимогами вакансії (listing_id зафіксувати)
-- [ ] Перевірити статус у CRM — чи не є кандидат у статусі `blacklisted`
-- [ ] Підготувати 2–3 уточнюючих питання про gaps у CV
+- [ ] Read the resume and portfolio in full
+- [ ] Cross-check the candidate's stack against the vacancy requirements (record listing_id)
+- [ ] Check CRM status — confirm candidate is NOT marked as `blacklisted`
+- [ ] Prepare 2–3 clarifying questions about any gaps in the CV
 
-## Під час дзвінка (30–45 хв)
+## During the Call (30–45 min)
 
-### Загальне
-- [ ] Підтвердити поточне місце роботи та причину зміни
-- [ ] Уточнити реальні терміни доступності (availability) — занотувати точну дату
-- [ ] Запитати про очікуваний рівень зарплати (gross USD/місяць)
-- [ ] Обговорити формат роботи: remote / hybrid / office — чи збігається з вакансією
+### General
+- [ ] Confirm current employer and reason for considering a change
+- [ ] Clarify actual availability — record the exact date
+- [ ] Ask about expected compensation (gross USD/month)
+- [ ] Discuss preferred work format: remote / hybrid / office — confirm it matches the vacancy
 
-### Технічний скринінг (поверхневий)
-- [ ] Попросити описати останній комерційний проєкт: стек, роль, команда
-- [ ] Запитати про найскладніший технічний виклик і як вирішили
-- [ ] Перевірити рівень англійської у форматі невимушеної розмови (2–3 хвилини)
+### Technical Screen (surface level)
+- [ ] Ask the candidate to describe their most recent commercial project: stack, role, team size
+- [ ] Ask about the most challenging technical problem they solved and how
+- [ ] Assess English level through 2–3 minutes of casual conversation
 
-### Мотивація
-- [ ] Чому саме зараз? Є контроффер від поточного роботодавця?
-- [ ] Що важливо у наступному місці: технології / команда / продукт / компенсація?
+### Motivation
+- [ ] Why now? Is there a counteroffer from the current employer?
+- [ ] What matters most in the next role: tech stack / team / product / compensation?
 
-## Після дзвінка (не пізніше 2 годин)
+## After the Call (within 2 hours)
 
-- [ ] Оновити статус та нотатки в CRM
-- [ ] Якщо підходить — надіслати резюме клієнту **тільки після отримання згоди кандидата** (див. Політику GDPR)
-- [ ] Якщо не підходить — відправити відмову протягом **24 годин**
+- [ ] Update status and notes in CRM
+- [ ] If suitable — send resume to client **only after obtaining candidate consent** (see GDPR Policy)
+- [ ] If not suitable — send rejection within **24 hours**
 
-## Підстави для статусу `blacklisted`
+## Grounds for `blacklisted` Status
 
-Кандидат може бути занесений до blacklist у разі:
-- двох і більше неявок на погоджені інтерв'ю без попередження;
-- надання завідомо неправдивих даних у резюме;
-- грубої поведінки щодо клієнта або співробітника агентства.
+A candidate may be blacklisted if they:
+- no-show two or more scheduled interviews without prior notice;
+- provide knowingly false information in their resume;
+- behave in a disrespectful or abusive manner toward the client or agency staff.
 
-Рішення про blacklist підтверджується Team Lead рекрутингу.
+Blacklist decisions must be confirmed by the Recruitment Team Lead.
